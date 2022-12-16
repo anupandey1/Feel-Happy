@@ -7,31 +7,31 @@ import { useState, useEffect} from "react";
     const handleSubmit = (event) => {
       event.preventDefault();
     // {inputText!=="" && inpText!=="" && 
-    // <Tokes inputText={inputText} inpText={inpText}/>}
+    // <Bmi inputText={inputText} inpText={inpText}/>}
   }
   return (
     <form>
-      <label>Enter your weight:
-        <input 
+      <label>Enter your weight :
+        <input className="bg-lime-200 mt-20"
           type="number" 
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
           />
       </label>
-      <label>Enter your height:
-        <input 
+      <label>Enter your height :
+        <input className="bg-lime-200 mt-10"
           type="number" 
           value={inpText}
           onChange={(e) => setInpText(e.target.value)}
           />
         <br/>      
         </label>
-      <button type="submit" onSubmit={handleSubmit}>sss</button>
+      <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-10" onSubmit={handleSubmit}>submit</button>
       {inputText!=="" &&
-      <Tokes inputText={inputText} inpText={inpText}/>}
+      <Bmi inputText={inputText} inpText={inpText}/>}
     </form>
     )};
-    export default function Tokes({inputText},{inpText}) {
+    export default function Bmi({inputText},{inpText}) {
       
       const [data, setData] = useState(null);
       const [loading, setLoading] = useState(true);
@@ -81,7 +81,7 @@ import { useState, useEffect} from "react";
       //      <>
       // WEIGHT: <input onChange={handleUserInput} />
       //      {inputText!=="" &&
-      //      <Tokes inputText={inputText} inpText={inpText}/>}
+      //      <Bmi inputText={inputText} inpText={inpText}/>}
     // </>
     //)
     //};
