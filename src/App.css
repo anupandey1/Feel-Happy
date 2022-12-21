@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+p{
+    color:blueviolet;
+    font-family: "serif";
+    font-size: 55px;
+    margin: 1px 10PX 10PX 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 4s steps(60, end); 
+}
+  
+@keyframes type{ 
+    from { width: 0;} 
+  } 
+  .sol{
+    color: darkorchid;
+    font-size: 30px;
+    text-align: center;
+  }
