@@ -41,11 +41,11 @@ const Bmi = () => {
 
   return (
     <>
-      <form className="text-4xl md:text-6xl text-center font-serif ">
+      <form className="text-4xl md:text-5xl text-center font-serif ">
         <div className="flex flex-col">
         <label>
           Enter your weight :
-          <input className="bg-lime-200 lg:mt-20 my-5"
+          <input className="bg-gray-50 lg:mt-5 my-5"
             type="number"
             value={weight}
             onChange={handleweight}
@@ -54,8 +54,8 @@ const Bmi = () => {
           />
         </label>
         <label>
-         Enter your height:
-          <input className="bg-lime-200 lg:mt-20 my-5 "
+         Enter your height :
+          <input className="bg-gray-50 lg:mt-20 my-5 "
             type="number"
             value={height}
             onChange={handleHeight}
@@ -64,11 +64,15 @@ const Bmi = () => {
           />
         </label>
         </div>
-        <button type="submit" onClick={handleSubmit} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-10" >
-          :click:
+        <button type="submit" onClick={handleSubmit} className="bg-blue-500 hover:bg-blue-700 text-white font-bold my-5 px-4 rounded mt-10 text-4xl" >
+          :Calculate:
         </button>
+        <div className="text-4xl">
         <p>Your BMI is:</p>
         {bmii ? bmii.info.bmi : []}
+        <p>You are:</p>
+        {bmii ? bmii.info.health:[]}
+        </div>
       </form>
     </>
   );
