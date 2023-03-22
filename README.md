@@ -6,3 +6,5 @@ It fetches:\
 • Your BMI and weight status , taking weight and height as input.\
 • Weather info of any city for you to plan trips.\
 • A random joke to enhance the mood of the user.
+
+I also used my previous project,https://anupandey1.github.io/Weather-App/ (my first attempt to fetch an api)
